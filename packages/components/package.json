@@ -1,0 +1,34 @@
+{
+  "name": "@sui/components",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Piotr Smialkowski <p.smialkowski@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.mjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "micropack --css-module",
+    "build:dev": "micropack --css-module --dev",
+    "build:watch": "npm run build -- --dev --watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@stool/dom": "^2.4.3",
+    "preact": "^10.5.14"
+  },
+  "devDependencies": {
+    "@stool/micropack": "0.4.0"
+  }
+}

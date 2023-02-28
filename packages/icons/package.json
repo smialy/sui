@@ -1,0 +1,29 @@
+{
+  "name": "@sui/icons",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Piotr Smialkowski <p.smialkowski@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "source": "src/index.ts",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.mjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "micropack --css-module",
+    "build:dev": "micropack --css-module --dev",
+    "build:watch": "npm run build -- --dev --watch"
+  },
+  "dependencies": {
+    "@stool/dom": "^2.4.3",
+    "preact": "^10.5.14"
+  }
+}

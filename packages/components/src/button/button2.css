@@ -1,0 +1,131 @@
+
+.btn {
+    --btn-padding: var(--root-spacer-form-element) var(--root-spacer-md);
+    --btn-line-height: var(--root-line-height-md);
+    --btn-font-weight: var(--root-font-weight-normal);
+    --btn-font-size: var(--root-fonts-size-md);
+    --btn-border-radius: var(--root-border-radius-sm);
+    --btn-disabled-color: var(--root-disabled-color-100);
+    --btn-disabled-bg: var(--root-disabled-color-200);
+    --btn-bg: transparent;
+
+    --btn-hover-bg: transparent;
+    --btn-focus-bg: transparent;
+    --btn-active-bg: transparent;
+
+    --btn-border-color: transparent;
+    --btn-border-width: 1px;
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 0;
+    padding: var(--btn-padding);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+    border-radius: var(--btn-border-radius);
+    /* border: solid var(--btn-border-width) var(--btn-border-color); */
+}
+
+.btn::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    content: "";
+
+    border-radius: var(--btn-border-radius);
+    border: var(--btn-border-width) solid;
+    border-color: var(--btn-border-color);
+}
+
+.btn:hover {
+    --btn-border-width: 2px;
+    color: var(--btn-hover-color);
+    border-color: var(--btn-hover-border-color);
+    background-color: var(--btn-hover-bg);
+}
+.btn:focus {
+    --btn-border-width: 2px;
+    border-color: var(--btn-focus-color);
+    background-color: var(--btn-focus-bg);
+}
+
+.btn:active {
+    --btn-border-width: 2px;
+    background-color: var(--btn-active-bg);
+    border-color: var(--btn-active-color);
+}
+.primary {
+    --btn-bg: var(--root-primary-color-100);
+    --btn-color: var(--root-color-light-100);
+    --btn-hover-bg: var(--root-primary-color-200);
+    --btn-hover-color: var(--root-color-light-100);
+}
+.secondary {
+    --btn-color: var(--root-primary-color-100);
+    --btn-border-color: var(--root-primary-color-100);
+    --btn-hover-color: var(--root-primary-color-100);
+}
+.danger {
+    --btn-color: var(--root-color-light-100);
+    --btn-bg: var(--root-danger-color-100);
+    --btn-hover-bg: var(--root-danger-color-200);
+    --btn-hover-color: var(--root-color-light-100);
+
+}
+.tertiary {
+    --btn-color: var(--root-color-100);
+    --btn-border-color: var(--root-color-100);
+}
+.warning {
+    --btn-bg: var(--root-warning-color-100);
+    --btn-color: var(--root-color-dark-100);
+    --btn-hover-bg: var(--root-palette-gold-500);
+}
+.link {
+    --btn-color: var(--root-link-color);
+    --btn-hover-color: var(--root-link-color-hover);
+    --btn-disabled-bg: transparent;
+}
+.plain {
+    --btn-color: var(--root-color-200);
+    --btn-hover-color: var(--root-color-100);
+    --btn-disabled-bg: transparent;
+}
+.control {
+    --btn-color: var(--root-color-100);
+    --btn-border-radius: 0;
+    --btn-border-color: var(--root-border-color-300) var(--root-border-color-300) var(--root-border-color-200) var(--root-border-color-300);
+    --btn-border-width: var(1px 1px 2px 1px);
+    --btn-disabled-bg: var(--root-disabled-color-300);
+}
+.control:hover {
+    --btn-border-color:
+        var(--root-border-color-300)
+        var(--root-border-color-300)
+        var(--root-primary-color-100)
+        var(--root-border-color-300);
+}
+.btn:disabled, .btn.disabled {
+    --btn-border-color: transparent;
+    --btn-border-width: 0;
+    color: var(--btn-disabled-color);
+    background-color: var(--btn-disabled-bg);
+    pointer-events: none;
+}
+
+.icon {
+    margin: 0 0.20rem 0 0;
+}

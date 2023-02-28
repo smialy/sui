@@ -1,0 +1,57 @@
+.back {
+}
+.section {
+    margin: 16px 0;
+    padding: 16px;
+    border: solid 1px #888;
+}
+.section-title {
+    font-weight: bold;
+    padding: 0 0 8px;
+}
+.section-body {
+}
+.image-dummy {
+    height: 200px;
+    display: flex;
+    background: #888;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+pre {
+    padding: 16px;
+    margin: 16px 0 0;
+    font-family: monospace;
+    border: solid 1px #aaa;
+}
+code {
+}
+code .token {
+
+}
+code .tag {
+    color: #4b69c6;
+}
+code .attr-value {
+    color: #7a3e9d;
+}
+code .punctuation {
+    color: #888;
+}
+code .attr-name {
+    color: #8190a0;
+    font-style: italic;
+}
+code .attr-equal {
+    color: #888;
+}
+.box {
+    padding:1rem;
+    background:#ddd;
+    border:solid 1px #888;
+    text-align:center;
+}
+.box-hmax {
+    height: 100%;
+}

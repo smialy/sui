@@ -1,0 +1,6 @@
+.btn-icon {
+    margin-right: 4px;
+}
+.btn-icon:only-child {
+    margin-right: 0;
+}

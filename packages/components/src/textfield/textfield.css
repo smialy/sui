@@ -1,0 +1,99 @@
+.input {
+    --form-control-border-bottom-color: var(--root-border-color-200);
+    --form-control-border-bottom-width: var(--root-border-width-sm);
+    --form-control-color: var(--root-color-100);
+    --form-control-width: 100%;
+    --form-control-padding-top: calc(var(--root-spacer-form-element) - var(--root-border-width-sm));
+    --form-control-padding-bottom: calc(var(--root-spacer-form-element) - var(--form-control-border-bottom-width));
+    --form-control-padding-left: var(--root-spacer-sm);
+    --form-control-padding-right: var(--root-spacer-sm);
+    --form-control-padding: var(--form-control-padding-top) var(--form-control-padding-right) var(--form-control-padding-bottom) var(--form-control-padding-left);
+    --form-control-font-size: var(--root-font-size-md);
+    --form-control-line-height: var(--root-line-height-md);
+    --form-control-border-width: var(--root-border-width-sm);
+    --form-control-bg: var(--root-bg-100);
+    --form-control-height: calc(var(--form-control-font-size) * var(--form-control-line-height) + var(--form-control-height) * 2 + var(--form-control-padding-top) + var(--form-control-padding-bottom));
+    --form-control-border-color: var(--root-border-color-300);
+    --form-control-border-radius: 0;
+
+    display: block;
+    font-weight: 400;
+    background-clip: padding-box;
+    appearance: none;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    color: var(--form-control-color);
+    width: var(--form-control-width);
+    padding: var(--form-control-padding);
+    font-size: var(--form-control-font-size);
+    line-height: var(--form-control-line-height);
+    background-color: var(--form-control-bg);
+    border: solid var(--form-control-border-width);
+    border-color: var(--form-control-border-color);
+    border-bottom-color: var(--form-control-border-bottom-color);
+    border-bottom-width: var(--form-control-border-bottom-width);
+    border-radius: var(--form-control-border-radius);
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.input::after{
+    content:"";
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+.input:hover {
+    --form-control-border-bottom-color: var(--root-primary-color-100);
+}
+
+.label {
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 24px);
+    transition: color 200ms ease 0ms,transform 200ms ease 0ms,max-width 200ms ease 0ms;
+    z-index: 1;
+    pointer-events: none;
+    color: var(--input-label-color);
+}
+
+.help {
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+.filled .label {
+    color: #6c757d;
+}
+.focused .input,
+input:focus {
+    --form-control-border-bottom-color: var(--root-primary-color-100);
+    --form-control-border-bottom-width: var(--root-border-width-md);
+}
+.input:disabled,
+.disabled .input {
+    pointer-events: none;
+    user-select: none;
+}
+.disabled .label {
+    color: #6c757d;
+}
+.error .label {
+    color: var(--error-color);
+}
+.error .input {
+    border-color: var(--error-color);
+}
+.focused.error .input{
+    box-shadow: var(--input-focuesd-error-shadow);
+    outline: 0;
+}
+.error .help {
+    color: var(--error-color);
+}

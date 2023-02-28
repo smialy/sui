@@ -1,0 +1,5 @@
+.root {
+    border-radius: var(--paper-box-radius);
+    background-color: var(--paper-bg);
+    box-shadow: var(--paper-box-shadow);
+}

@@ -1,0 +1,15 @@
+{
+    "entries": [{
+        "input": "./src/primer.mjs",
+        "outputs": "./dist/primer.mjs"
+    }, {
+        "input": "./src/bootstrap.mjs",
+        "outputs": "./dist/bootstrap.mjs"
+    }, {
+        "input": "./src/sky-dark.mjs",
+        "outputs": "./dist/sky-dark.mjs"
+    }, {
+        "input": "./src/sky-light.mjs",
+        "outputs": "./dist/sky-light.mjs"
+    }]
+}

@@ -1,0 +1,18 @@
+.app {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-auto-rows: 50px auto 50px;
+    grid-template-areas:
+        "hd hd"
+        "sd main"
+        "ft ft";
+}
+header.menu {
+    grid-area: hd;
+}
+nav.sidebar {
+    grid-area: sd;
+}
+.page {
+    grid-area: main;
+}

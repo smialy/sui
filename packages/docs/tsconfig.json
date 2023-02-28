@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "jsx": "react-jsx",
+      "jsxImportSource": "preact",
+      "moduleResolution": "node",
+      "allowJs": true,
+      "alwaysStrict": false,
+      "strict": false
+    }
+}

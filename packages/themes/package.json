@@ -1,0 +1,43 @@
+{
+  "name": "@sui/themes",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Piotr Smialkowski <p.smialkowski@gmail.com>",
+  "homepage": "",
+  "source": "./src/index.mjs",
+  "license": "ISC",
+  "exports": {
+    "bs": {
+      "browser": "./dist/bootstrap.mjs",
+      "import": "./dist/bootstrap.mjs"
+    },
+    "primer": {
+      "browser": "./dist/primer.mjs",
+      "import": "./dist/primer.mjs"
+    },
+    "sky-light": {
+      "browser": "./dist/sky-light.mjs",
+      "import": "./dist/skyclight.mjs"
+    },
+    "sky-dark": {
+      "browser": "./dist/sky-dark.mjs",
+      "import": "./dist/sky-dark.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "micropack --config-file micropack.json",
+    "build:dev": "npm run build -- --dev",
+    "build:watch": "npm run build -- --dev --watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "@satto/core.api": "^1.0.0",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "@stool/micropack": "0.4.0"
+  }
+}
